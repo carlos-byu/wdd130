@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #023047;
+    background: #ffffff;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    background: #023047;
+    padding: 10px 20px;
+}
+
+header img {
+    width: 100px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.historia {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.historia h2 {
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+.historia img {
+    width: 100%;
+}
+
+.aventura h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.galeria {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.galeria figure {
+    text-align: center;
+}
+
+.galeria img {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #023047;
+    color: #ffffff;
+    padding: 15px 20px;
+}
+
+footer .social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+footer .social img {
+    width: 30px;
+    height: 30px;
+}
