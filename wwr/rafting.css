@@ -100,3 +100,10 @@ footer .social img {
     width: 30px;
     height: 30px;
 }
+
+figure img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+}
