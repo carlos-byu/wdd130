@@ -1,3 +1,11 @@
+:root {
+    --primary-color: #023047;
+    --secondary-color: #088f8f;
+    --accent-color: #f2a541;
+    --heading-font: Arial, sans-serif;
+    --body-font: Arial, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +13,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--body-font);
     color: #023047;
     background: #ffffff;
 }
@@ -43,6 +51,41 @@ main {
 main h1 {
     text-align: center;
     margin-bottom: 20px;
+}
+
+/* HERO - CORRIGIDO */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 15px;
 }
 
 .historia {
@@ -90,13 +133,13 @@ footer {
     padding: 15px 20px;
 }
 
-footer .social {
+footer .redes-sociais {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
 }
 
-footer .social img {
+footer .redes-sociais img {
     width: 30px;
     height: 30px;
 }
