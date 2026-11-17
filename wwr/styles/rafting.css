@@ -160,3 +160,22 @@ figure img {
     width: 120px;
     height: auto;
 }
+
+/* Usando as variáveis accent que faltavam */
+header nav a:hover {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+}
+
+.historia h2,
+.aventura h2 {
+    color: var(--accent2-color);
+}
+
+.hero article {
+    border-left: 6px solid var(--accent1-color);
+}
+
+footer {
+    border-top: 6px solid var(--accent2-color);
+}
