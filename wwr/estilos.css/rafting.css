@@ -1,0 +1,162 @@
+:root {
+    --primary-color: #023047;
+    --secondary-color: #219ebc;
+    --accent1-color: #ffb703;
+    --accent2-color: #fb8500;
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Roboto", sans-serif;
+    --white: #ffffff;
+    --overlay-color: rgba(255, 255, 255, 0.85);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--primary-color);
+    background: var(--white);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    background: var(--primary-color);
+    padding: 10px 20px;
+}
+
+header img {
+    width: 100px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main h1 {
+    font-family: var(--heading-font);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.historia {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.historia h2 {
+    font-family: var(--heading-font);
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+.historia img {
+    width: 100%;
+}
+
+.aventura h2 {
+    font-family: var(--heading-font);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.galeria {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.galeria figure {
+    text-align: center;
+}
+
+.galeria img {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 15px 20px;
+}
+
+footer .redes-sociais {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+footer .redes-sociais img {
+    width: 30px;
+    height: 30px;
+}
+
+figure img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    font-family: var(--heading-font);
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: var(--white);
+    background: var(--primary-color);
+    padding: 10px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: var(--overlay-color);
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.hero article img {
+    width: 120px;
+    height: auto;
+}
