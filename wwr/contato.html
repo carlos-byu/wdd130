@@ -15,15 +15,15 @@
     <header>
         <img src="images/beni.jpg" alt="Logo Rafting">
         <nav>
-            <a href="index.html">Início</a>
-            <a href="about.html">Sobre Nós</a>
-            <a href="trips.html">Viagens</a>
-            <a href="contato.html">Contato</a>
+            <a href="index.html">Página Inicial</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="passeios.html">Passeios</a>
+            <a href="contato.html">Fale Conosco</a>
         </nav>
     </header>
 
     <main>
-        <h1>Fale Conosco</h1>
+        <h1>Fale Conosco | Rafting Beni</h1>
 
         <section>
             <h2>Informações de Contato</h2>
@@ -83,18 +83,18 @@
                 <input type="email" id="email" name="email" required>
 
                 <p>Qual é o propósito da sua mensagem?</p>
-                <label><input type="radio" name="proposito" value="geral" checked> Pergunta
-                    Geral</label><br>
-                <label><input type="radio" name="proposito" value="reserva"> Pergunta sobre
-                    Reserva</label><br>
-                <label><input type="radio" name="proposito" value="sugestao"> Sugestão para o
-                    Site</label><br>
+                <input type="radio" id="proposito-geral" name="proposito" value="geral" checked>
+                <label for="proposito-geral">Pergunta Geral</label><br>
+                <input type="radio" id="proposito-reserva" name="proposito" value="reserva">
+                <label for="proposito-reserva">Pergunta sobre Reserva</label><br>
+                <input type="radio" id="proposito-sugestao" name="proposito" value="sugestao">
+                <label for="proposito-sugestao">Sugestão para o Site</label><br>
 
                 <label for="mensagem">Mensagem:</label>
                 <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
 
-                <label><input type="checkbox" name="newsletter"> Inscreva-me na newsletter
-                    mensal</label><br><br>
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Inscreva-me na newsletter mensal</label><br><br>
 
                 <button type="submit">Enviar Mensagem</button>
             </form>
@@ -103,11 +103,13 @@
 
     <footer>
         <p>©2026 Rafting Beni | Carlos Alberto Vasquez Lima</p>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="about.html">Sobre Nós</a>
-            <a href="trips.html">Viagens</a>
-            <a href="contato.html">Contato</a>
+        <nav class="redes-sociais">
+            <a href="https://facebook.com"><img src="images/beni.jpg" alt="Facebook"
+                  style="width:30px;height:30px;"></a>
+            <a href="https://instagram.com"><img src="images/beni.jpg" alt="Instagram"
+                  style="width:30px;height:30px;"></a>
+            <a href="https://youtube.com"><img src="images/beni.jpg" alt="YouTube"
+                  style="width:30px;height:30px;"></a>
         </nav>
         <a href="https://app.moqups.com">Link para o Wireframe da Página de Contato</a>
     </footer>
