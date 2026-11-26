@@ -288,3 +288,19 @@ button {
 iframe {
     max-width: 100%;
 }
+
+.equipe img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.redes-sociais img {
+    width: 30px;
+    height: 30px;
+}
+
+iframe {
+    border: 0;
+}
